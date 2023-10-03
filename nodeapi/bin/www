@@ -4,15 +4,15 @@
  * Module dependencies.
  */
 
-var app = require('../app');
-var debug = require('debug')('nodeapi:server');
-var http = require('http');
+var app = require('../app');//carga la app.js que esta en nodeapi
+var debug = require('debug')('nodeapi:server'); //carga el debug
+var http = require('http');//carga la libreria http
 
 /**
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.PORT || '3000');
+var port = normalizePort(process.env.PORT || '3000');//define el puerto que usamos
 app.set('port', port);
 
 /**
