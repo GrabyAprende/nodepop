@@ -1,0 +1,33 @@
+{
+    "anuncios": [{
+        "nombre" : "Busco reparador de libro",
+        "venta" : false,
+        "precio" : 20,
+        "foto" : "book.jpeg",
+        "tags" : [ "work", "lifestyle" ]
+    },
+    
+    {
+        "nombre" : "Ordenador apple",
+        "venta" : true,
+        "precio" : 900,
+        "foto" : "apple.jpeg",
+        "tags" : [ "work" ]
+    },
+    
+    {
+        "nombre" : "Bicicleta aro 26",
+        "venta" : true,
+        "precio" : 50,
+        "foto" : "bicicleta.jpeg",
+        "tags" : [ "motor", "lifestyle" ]
+    },
+    
+    {
+        "nombre" : "Iphone 13",
+        "venta" : true,
+        "precio" : 450,
+        "foto" : "iphone.webp",
+        "tags" : [ "mobile", "lifestyle" ]
+    }]
+}
