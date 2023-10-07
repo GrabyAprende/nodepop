@@ -12,6 +12,8 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
+app.locals.title = 'Nodepop';
+
 
 //middlewares (son cosas que se ejecutan ante cada peticion al servidor)
 app.use(logger('dev'));
@@ -19,6 +21,12 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+//rutas del API
+app.use('/api/anuncios', require('./routes/api/anuncios'));
+
+//rutas del webside
+
 
 app.use('/', require('./routes/index'));
 app.use('/users', require('./routes/users'));

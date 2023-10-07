@@ -6,3 +6,10 @@ body {
 a {
   color: #00B7FF;
 }
+
+.imagen {
+  width: 200px;
+}
+.parrafoSaludo {
+  color: olive;
+}
