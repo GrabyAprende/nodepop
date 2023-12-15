@@ -1,10 +1,7 @@
-<!DOCTYPE html>
-<html>
-  <head>
+<% include cabecera.ejs %>
+
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
+    <!-- <link rel='stylesheet' href='/stylesheets/style.css' /> -->
     <h1><%= title %></h1>
     <p class="parrafoSaludo"><%= __('Welcome to') %> <%= title %></p>
     <ul>
@@ -18,5 +15,5 @@
       <% }); %>
       
     </ul>
-  </body>
-</html>
+ 
+    <% include pie.ejs %>
