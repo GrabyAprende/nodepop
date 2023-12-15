@@ -1,5 +1,22 @@
-# nodepop
-Práctica WEB-API Node.js/MongoDB. Desarrollar una API.
+# Nodepop
+
+Práctica WEB-API Node.js/MongoDB.
+Desarrollar una API con MongoDB.
 
 # nodeapi
-# gitignore    
+
+`npm install`
+
+# producción
+
+`npm start`
+
+# development
+
+`npm run dev`
+
+# servidor
+
+`./bin/mongod --dbpath ./data`
+
+# gitignore

@@ -6,7 +6,7 @@
   </head>
   <body>
     <h1><%= title %></h1>
-    <p class="parrafoSaludo">Welcome to  <%= title %></p>
+    <p class="parrafoSaludo"><%= __('Welcome to') %> <%= title %></p>
     <ul>
       <% listaAnuncios.forEach(function(anuncio){ %>
         <li>
@@ -14,7 +14,7 @@
           <figure>
             <img class="imagen" src="/images/<%= anuncio.foto %>" alt="Foto del anuncio">
           </figure>
-        </li>
+        </li> 
       <% }); %>
       
     </ul>
