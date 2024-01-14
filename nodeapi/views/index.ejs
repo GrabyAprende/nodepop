@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
+<% include cabecera.ejs %>
     <h1><%= title %></h1>
-    <p class="parrafoSaludo">Welcome to  <%= title %></p>
+    <p class="parrafoSaludo"><%= __('Welcome to') %> <%= title %></p>
     <ul>
       <% listaAnuncios.forEach(function(anuncio){ %>
         <li>
@@ -18,5 +12,4 @@
       <% }); %>
       
     </ul>
-  </body>
-</html>
+<% include pie.ejs %>

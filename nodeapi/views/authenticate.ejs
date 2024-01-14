@@ -1,0 +1,23 @@
+<% include cabecera.ejs %>
+    <!-- Basic features section-->
+    <article>
+        <h3>Login</h3>
+        <div>
+            <div>
+                <form method="POST">
+                    <div>
+                        <label for="exampleInputEmail1"><%= __('Email address') %> </label>
+                        <input type="email" name="email" value="<%= email %>" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <small><%= __('helpEmail') %> </small>
+                    </div>
+                    <div>
+                        <label for="exampleInputPassword1"><%= __('Password') %> </label>
+                        <input type="password" name="password" id="exampleInputPassword1">
+                    </div>
+                    <button type="submit"><%= __('Submit') %> </button>
+                    <p><%= error %></p>
+                </form>
+            </div>
+        </div>
+    </article>
+<% include pie.ejs %>

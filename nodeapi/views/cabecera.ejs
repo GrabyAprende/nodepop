@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html data-theme="light">
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+  </head>
+  <body>
+    <main class="container">
+
+      <h1>Nodepop</h1>
+      <% getLocales().forEach(locale => { %>
+        <a href="/change-locale/<%= locale %>"><%= locale %></a>&nbsp;
+        <!-- <a href=""><%= locale %></a> -->
+      <% }) %>
